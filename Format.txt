@@ -1,14 +1,14 @@
 dep{
-	sem1{
-  		{sub1name:credit},
-  		{sub2name:credit},
-  		{sub3name:credit},
-  		{sub3name:credit}
-	}
-	sem2{
-		{sub1name:credit},
-  		{sub2name:credit},
-  		{sub3name:credit},
-  		{sub3name:credit}
-	}
+	 const sem1=[
+  		{sub1name:3},
+  		{sub2name:3},
+  		{sub3name:3},
+  		{sub3name:3}
+	]
+	 const sem2=[
+		{sub1name:3},
+  		{sub2name:3},
+  		{sub3name:3},
+  		{sub3name:3}
+	]
 }
