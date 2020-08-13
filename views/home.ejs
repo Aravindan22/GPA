@@ -3,10 +3,12 @@
 
 </head>
 <body>
-    <div>
-        <%  departments.forEach(function(department){ %>
-            <button type="button"><%=department%></button>        
-            <% }) %>
-    </div>
+    <form action="/" method="POST">
+        <div>
+            <%  departments.forEach(function(department){ %>
+                <button type="submit" name="department" value="<%=department%>"><%=department%></button>        
+                <% }) %>
+        </div>
+    </form>
 </body>
 </html>

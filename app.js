@@ -14,6 +14,9 @@ app.use(express.static("public"));
 app.get("/",function (req, res){
     res.render("home",{departments:departments})
 });
+app.post("/",function(req,res){
+    console.log(req.body.department);
+});
 app.listen(3000,function (){
     console.log("Server started on port 3000");
 });
