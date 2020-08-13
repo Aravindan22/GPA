@@ -7,6 +7,7 @@ const app = express();
 app.set('view engine', 'ejs');
 
 departments=["CSE","IT","FT"]
+semester =["1", "2","3","4","5", "6","7","8"]
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
