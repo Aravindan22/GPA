@@ -1,6 +1,8 @@
-sem1{
-  {sub1name:credit},
-  {sub2name:credit},
-  {sub3name:credit},
-  {sub3name:credit}
+dep{
+	sem1{
+  		{sub1name:credit},
+  		{sub2name:credit},
+  		{sub3name:credit},
+  		{sub3name:credit}
+	}
 }
