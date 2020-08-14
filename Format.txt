@@ -1,3 +1,5 @@
+// JavaScript source code
+
 const cse = [
     [
         { "TECHNICAL ENGLISH- I": 3 },
@@ -52,13 +54,13 @@ const cse = [
         { "ELECTIVE - C# AND DOTNET PROGRAMMING": 3 },
         { "COMPUTER NETWORKS LABORATORY": 2 },
         { "PYTHON PROGRAMMING LABORATORY": 2 },
-        { "PROFESSIONAL COMMUNICATION SKILLS LABORATORY": 1},
+        { "PROFESSIONAL COMMUNICATION SKILLS LABORATORY": 1 },
         { "SOFT SKILLS AND APTITUDE – III": 1 },
     ]
-] 
+]
 
-mech = [
-     [
+const mech = [
+    [
         { "TECHNICAL ENGLISH- I": 3 },
         { "ENGINEERING MATHEMATICS-I": 4 },
         { "ENGINEERING PHYSICS": 3 },
@@ -101,7 +103,7 @@ mech = [
         { "ENGINEERING MATERIALS AND METALLURGY  ": 3 },
         { "THERMAL ENGINEERING LABORATORY": 2 },
         { "ELECTRICAL DRIVES AND MICROPROCESSOR LABORATORY": 2 },
-        { "COMMUNICATIONS SKILLS LABORATORY": 1},
+        { "COMMUNICATIONS SKILLS LABORATORY": 1 },
         { "SOFT SKILLS AND APTITUDE – II": 1 },
     ],
     [
@@ -115,12 +117,12 @@ mech = [
         { "ELECTIVE - HEATING, VENTIALTION AND AIR CONDITIONING": 3 },
         { "HEAT POWER LABORATORY": 2 },
         { "DYNAMICS LABORATORY": 2 },
-        { "CAD AND CAM LABORATORY": 2},
+        { "CAD AND CAM LABORATORY": 2 },
         { "SOFT SKILLS AND APTITUDE – III": 1 },
     ]
-] 
+]
 
-civil =  [
+const civil = [
     [
         { "TECHNICAL ENGLISH- I": 3 },
         { "ENGINEERING MATHEMATICS-I": 4 },
@@ -176,13 +178,13 @@ civil =  [
         { "ELECTIVE - REMOTE SENSING AND GIS": 3 },
         { "SOIL MECHANICS LABORATORY": 2 },
         { "CONCRETE AND HIGHWAY LABORATORY": 2 },
-        { "TECHNICAL SEMINAR": 1},
+        { "TECHNICAL SEMINAR": 1 },
         { "SOFT SKILLS AND APTITUDE – III": 1 },
     ]
-] 
+]
 
-eee = [
-     [
+const eee = [
+    [
         { "TECHNICAL ENGLISH- I": 3 },
         { "ENGINEERING MATHEMATICS-I": 4 },
         { "ENGINEERING PHYSICS": 3 },
@@ -235,14 +237,14 @@ eee = [
         { "ELECTIVE - NON-CONVENTIONAL ENERGY SOURCES ": 3 },
         { "ELECTIVE - CONSTRUCTION PRACTICES AND EQUIPMENTS": 3 },
         { "LINEAR AND DIGITAL IC LABORATORY": 2 },
-        { "MICROPROCESSORS AND MICROCONTROLLERS LABORATORY": 2},
-        { "POWER ELECTRONICS DESIGN LABORATORY": 2},
+        { "MICROPROCESSORS AND MICROCONTROLLERS LABORATORY": 2 },
+        { "POWER ELECTRONICS DESIGN LABORATORY": 2 },
         { "SOFT SKILLS AND APTITUDE – III": 1 },
     ]
-] 
+]
 
-ece =  [
-     [
+const ece = [
+    [
         { "TECHNICAL ENGLISH- I": 3 },
         { "ENGINEERING MATHEMATICS-I": 4 },
         { "ENGINEERING PHYSICS": 3 },
@@ -284,7 +286,7 @@ ece =  [
         { "ANALOG COMMUNICATION SYSTEM": 3 },
         { "LINEAR INTEGRATED CIRCUITS LABORATORY": 1 },
         { "ELECTRONIC CIRCUITS AND SIMULATION LABORATORY": 1 },
-        { "DIGITAL SIGNAL PROCESSING": 1},
+        { "DIGITAL SIGNAL PROCESSING": 1 },
         { "SOFT SKILLS AND APTITUDE – II": 1 },
     ],
     [
@@ -296,13 +298,13 @@ ece =  [
         { "ELECTIVE - PROGRAMMING IN C++": 3 },
         { "ELECTIVE - CONTROL SYSTEMS": 3 },
         { "COMMUNICATION LABORATORY": 1 },
-        { "MICROPROCESSORS AND MICROCONTROLLERS LABORATORY": 1},
-        { "VLSI LABORATORY": 1},
+        { "MICROPROCESSORS AND MICROCONTROLLERS LABORATORY": 1 },
+        { "VLSI LABORATORY": 1 },
         { "SOFT SKILLS AND APTITUDE – III": 1 },
     ]
-] 
+]
 
-it =  [
+const it = [
     [
         { "TECHNICAL ENGLISH- I": 3 },
         { "ENGINEERING MATHEMATICS-I": 4 },
@@ -331,7 +333,7 @@ it =  [
         { "DIGITAL LOGIC DESIGN": 3 },
         { "PRINCIPLES OF COMMUNICATION": 3 },
         { "OBJECT ORIENTED PROGRAMMING IN C++": 3 },
-        { "COMPUTER ARCHITECTURE": 3},
+        { "COMPUTER ARCHITECTURE": 3 },
         { "DATA STRUCTURES USING C++ LABORATORY": 2 },
         { "DIGITAL LOGIC DESIGN LABORATORY": 1 },
         { "COMMUNICATION SKILLS LABORATORY": 1 },
@@ -345,7 +347,7 @@ it =  [
         { "SOFTWARE ENGINEERING": 3 },
         { "JAVA PROGRAMMING ": 3 },
         { "MICROPROCESSOR AND MICROCONTROLLERS LABORATORY": 1 },
-        { "JAVA PROGRAMMING LABORATORY": 1},
+        { "JAVA PROGRAMMING LABORATORY": 1 },
         { "SOFT SKILLS AND APTITUDE – II": 1 },
     ],
     [
@@ -357,13 +359,13 @@ it =  [
         { "ELECTIVE - C# .NET": 3 },
         { "COMPUTER NETWORKS LABORATORY": 1 },
         { "DATABASE MANAGEMENT SYSTEMS LABORATORY": 2 },
-        { "WEB TECHNOLOGY LABORATORY": 2},
-        { "MINI PROJECT - I": 1},
+        { "WEB TECHNOLOGY LABORATORY": 2 },
+        { "MINI PROJECT - I": 1 },
         { "SOFT SKILLS AND APTITUDE – III": 1 },
     ]
-] 
+]
 
-ft =  [
+const ft = [
     [
         { "TECHNICAL ENGLISH- I": 3 },
         { "ENGINEERING MATHEMATICS-I": 4 },
@@ -392,7 +394,7 @@ ft =  [
         { "ENVIRONMENTAL SCIENCE AND ENGINEERING": 3 },
         { "TECHNOLOGY OF YARN MANUFACTURE": 3 },
         { "FASHION ART AND DESIGN": 3 },
-        { "PATTERN MAKING AND GRADING LABORATORY": 2},
+        { "PATTERN MAKING AND GRADING LABORATORY": 2 },
         { "FASHION ILLUSTRATION LABORATORY": 1 },
         { "SOFT SKILLS AND APTITUDE-I": 1 },
     ],
@@ -423,7 +425,18 @@ ft =  [
 ] 
 
 const departments = {
-"CSE":cse,
-"MECH":mech,
-"ECE":ece,
+    "CSE": cse,
+    "MECH": mech,
+    "CIVIL": civil,
+    "EEE": eee,
+    "ECE": ece,
+    "IT": it,
+    "FT": ft
 }
+
+function getSubject(department, semester) {
+    //return (departments[department][semester]);
+    console.log(departments[department][semester]);
+}
+
+getSubject("CSE", 2);
