@@ -1,0 +1,9 @@
+<%- include("partials/header"); -%>
+
+<div>
+        <%  semester.forEach(function(sem){ %>
+            <button type="button" name = "sem"><%=sem%></button>        
+        <% }); %>
+</div>
+
+<%- include("partials/footer"); -%>
