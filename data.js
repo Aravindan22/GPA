@@ -435,7 +435,7 @@ const departments = {
 }
 
 function getSubject(department, semester) {
-    return (departments[department][semester]);
+    return (departments[department][semester-1]);
     //console.log(departments[department][semester]);
 }
 
