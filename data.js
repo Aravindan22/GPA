@@ -42,7 +42,7 @@ const cse = [
         { "WEB PROGRAMMING PRACTICAL": 2 },
         { "OPERATING SYSTEMS LABORATORY ": 2 },
         { "DATABASE MANAGEMENT SYSTEMS LABORATORY": 2 },
-        { "SOFT SKILLS AND APTITUDE – II": 1 },
+        { "SOFT SKILLS AND APTITUDE â€“ II": 1 },
     ],
     [
         { "SOFTWARE ENGINEERING": 3 },
@@ -55,7 +55,7 @@ const cse = [
         { "COMPUTER NETWORKS LABORATORY": 2 },
         { "PYTHON PROGRAMMING LABORATORY": 2 },
         { "PROFESSIONAL COMMUNICATION SKILLS LABORATORY": 1 },
-        { "SOFT SKILLS AND APTITUDE – III": 1 },
+        { "SOFT SKILLS AND APTITUDE â€“ III": 1 },
     ]
 ]
 
@@ -104,7 +104,7 @@ const mech = [
         { "THERMAL ENGINEERING LABORATORY": 2 },
         { "ELECTRICAL DRIVES AND MICROPROCESSOR LABORATORY": 2 },
         { "COMMUNICATIONS SKILLS LABORATORY": 1 },
-        { "SOFT SKILLS AND APTITUDE – II": 1 },
+        { "SOFT SKILLS AND APTITUDE â€“ II": 1 },
     ],
     [
         { "HEAT AND MASS TRANSFER": 3 },
@@ -118,7 +118,7 @@ const mech = [
         { "HEAT POWER LABORATORY": 2 },
         { "DYNAMICS LABORATORY": 2 },
         { "CAD AND CAM LABORATORY": 2 },
-        { "SOFT SKILLS AND APTITUDE – III": 1 },
+        { "SOFT SKILLS AND APTITUDE â€“ III": 1 },
     ]
 ]
 
@@ -165,7 +165,7 @@ const civil = [
         { "CONCRETE TECHNOLOGY   ": 3 },
         { "HYDRAULIC ENGINEERING LABORATORY": 2 },
         { "MATERIAL TESTING LABORATORY": 2 },
-        { "SOFT SKILLS AND APTITUDE – II": 1 },
+        { "SOFT SKILLS AND APTITUDE â€“ II": 1 },
     ],
     [
         { "PROFESSIONAL ETHICS AND HUMAN VALUES": 3 },
@@ -179,7 +179,7 @@ const civil = [
         { "SOIL MECHANICS LABORATORY": 2 },
         { "CONCRETE AND HIGHWAY LABORATORY": 2 },
         { "TECHNICAL SEMINAR": 1 },
-        { "SOFT SKILLS AND APTITUDE – III": 1 },
+        { "SOFT SKILLS AND APTITUDE â€“ III": 1 },
     ]
 ]
 
@@ -210,23 +210,23 @@ const eee = [
         { "TRANSFORMS AND PARTIAL DIFFERENTIAL EQUATIONS": 4 },
         { "ELECTRONIC DEVICES AND CIRCUITS": 3 },
         { "ELECTROMAGNETIC THEORY ": 3 },
-        { "ELECTRICAL MACHINES – I ": 3 },
+        { "ELECTRICAL MACHINES â€“ I ": 3 },
         { "NETWORK ANALYSIS AND SYNTHESIS": 3 },
         { "ENVIRONMENTAL SCIENCE AND ENGINEERING": 3 },
         { "ELECTRONIC DEVICES AND CIRCUITS LABORATORY": 2 },
-        { "ELECTRICAL MACHINES LABORATORY –I": 2 },
+        { "ELECTRICAL MACHINES LABORATORY â€“I": 2 },
         { "SOFT SKILLS AND APTITUDE-I": 1 },
     ],
     [
         { "SIGNALS AND SYSTEMS": 3 },
-        { "ELECTRICAL MACHINES – II ": 3 },
+        { "ELECTRICAL MACHINES â€“ II ": 3 },
         { "GENERATION, TRANSMISSION AND DISTRIBUTION SYSTEMS": 4 },
         { "MEASUREMENTS AND INSTRUMENTATION": 3 },
         { "CONTROL SYSTEMS": 3 },
         { "DIGITAL LOGIC CIRCUITS PRACTICAL": 3 },
         { "CONTROL AND INSTRUMENTATION LABORATORY": 2 },
-        { "ELECTRICAL MACHINES LABORATORY – II": 2 },
-        { "SOFT SKILLS AND APTITUDE – II": 1 },
+        { "ELECTRICAL MACHINES LABORATORY â€“ II": 2 },
+        { "SOFT SKILLS AND APTITUDE â€“ II": 1 },
     ],
     [
         { "TOTAL QUALITY MANAGEMENT IN ELECTRICAL INDUSTRY": 3 },
@@ -239,7 +239,7 @@ const eee = [
         { "LINEAR AND DIGITAL IC LABORATORY": 2 },
         { "MICROPROCESSORS AND MICROCONTROLLERS LABORATORY": 2 },
         { "POWER ELECTRONICS DESIGN LABORATORY": 2 },
-        { "SOFT SKILLS AND APTITUDE – III": 1 },
+        { "SOFT SKILLS AND APTITUDE â€“ III": 1 },
     ]
 ]
 
@@ -287,7 +287,7 @@ const ece = [
         { "LINEAR INTEGRATED CIRCUITS LABORATORY": 1 },
         { "ELECTRONIC CIRCUITS AND SIMULATION LABORATORY": 1 },
         { "DIGITAL SIGNAL PROCESSING": 1 },
-        { "SOFT SKILLS AND APTITUDE – II": 1 },
+        { "SOFT SKILLS AND APTITUDE â€“ II": 1 },
     ],
     [
         { "DIGITAL COMMUNICATION": 3 },
@@ -300,7 +300,7 @@ const ece = [
         { "COMMUNICATION LABORATORY": 1 },
         { "MICROPROCESSORS AND MICROCONTROLLERS LABORATORY": 1 },
         { "VLSI LABORATORY": 1 },
-        { "SOFT SKILLS AND APTITUDE – III": 1 },
+        { "SOFT SKILLS AND APTITUDE â€“ III": 1 },
     ]
 ]
 
@@ -348,7 +348,7 @@ const it = [
         { "JAVA PROGRAMMING ": 3 },
         { "MICROPROCESSOR AND MICROCONTROLLERS LABORATORY": 1 },
         { "JAVA PROGRAMMING LABORATORY": 1 },
-        { "SOFT SKILLS AND APTITUDE – II": 1 },
+        { "SOFT SKILLS AND APTITUDE â€“ II": 1 },
     ],
     [
         { "COMPUTER NETWORKS": 3 },
@@ -361,7 +361,7 @@ const it = [
         { "DATABASE MANAGEMENT SYSTEMS LABORATORY": 2 },
         { "WEB TECHNOLOGY LABORATORY": 2 },
         { "MINI PROJECT - I": 1 },
-        { "SOFT SKILLS AND APTITUDE – III": 1 },
+        { "SOFT SKILLS AND APTITUDE â€“ III": 1 },
     ]
 ]
 
@@ -408,7 +408,7 @@ const ft = [
         { "GARMENT CONSTRUCTION LABORATORY - I": 2 },
         { "COMMUNICATION SKILLS LABORATORY": 1 },
         { "IN-PLANT TRAINING": 1 },
-        { "SOFT SKILLS AND APTITUDE – II": 1 },
+        { "SOFT SKILLS AND APTITUDE â€“ II": 1 },
     ],
     [
         { "GARMENT CONSTRUCTION-II": 3 },
@@ -420,7 +420,7 @@ const ft = [
         { "GARMENT CONSTRUCTION LABORATORY": 2 },
         { "APPAREL MACHINERY LABORATORY": 1 },
         { "IN-PLANT TRAINING": 2 },
-        { "SOFT SKILLS AND APTITUDE – III": 1 },
+        { "SOFT SKILLS AND APTITUDE â€“ III": 1 },
     ]
 ] 
 
@@ -435,8 +435,8 @@ const departments = {
 }
 
 function getSubject(department, semester) {
-    //return (departments[department][semester]);
-    console.log(departments[department][semester]);
+    return (departments[department][semester]);
+    //console.log(departments[department][semester]);
 }
 
 getSubject("CSE", 2);
