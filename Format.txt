@@ -1,5 +1,5 @@
-const cse = { [
-    sem1 = [
+const cse = [
+    [
         { "TECHNICAL ENGLISH- I": 3 },
         { "ENGINEERING MATHEMATICS-I": 4 },
         { "ENGINEERING PHYSICS": 3 },
@@ -10,7 +10,7 @@ const cse = { [
         { "C PROGRAMMING LABORATORY": 1 },
         { "ENGINEERING PRACTICES LABORATORY": 1 },
     ],
-    sem2 =[
+    [
         { "TECHNICAL ENGLISH- II": 3 },
         { "ENGINEERING MATHEMATICS-II": 4 },
         { "PHYSICS OF MATERIALS": 3 },
@@ -21,7 +21,7 @@ const cse = { [
         { "PROGRAMMING AND DATA STRUCTURES LABORATORY": 1 },
         { "BASIC ELECTRICAL AND ELECTRONICS ENGINEERING LABORATORY": 1 },
     ],
-    sem3 =[
+    [
         { "DISCRETE MATHEMATICS": 4 },
         { "DATA STRUCTURES": 3 },
         { "DIGITAL PRINCIPALS AND SYSTEM DESIGN": 3 },
@@ -32,7 +32,7 @@ const cse = { [
         { "COMMUNICATION LABORATORY": 1 },
         { "SOFT SKILLS AND APTITUDE": 1 },
     ],
-    sem4 =[
+    [
         { "PROBABILITY AND QUEUING THEORY": 4 },
         { "DATABASE MANAGEMENT SYSTEMS": 3 },
         { "OPERATING SYSTEMS": 3 },
@@ -42,7 +42,7 @@ const cse = { [
         { "DATABASE MANAGEMENT SYSTEMS LABORATORY": 2 },
         { "SOFT SKILLS AND APTITUDE – II": 1 },
     ],
-    sem5 =[
+    [
         { "SOFTWARE ENGINEERING": 3 },
         { "COMPUTER NETWORKS": 3 },
         { "EMBEDDED SYSTEMS DESIGN": 3 },
@@ -55,10 +55,10 @@ const cse = { [
         { "PROFESSIONAL COMMUNICATION SKILLS LABORATORY": 1},
         { "SOFT SKILLS AND APTITUDE – III": 1 },
     ]
-] }
+] 
 
-mech = { [
-    sem1 = [
+mech = [
+     [
         { "TECHNICAL ENGLISH- I": 3 },
         { "ENGINEERING MATHEMATICS-I": 4 },
         { "ENGINEERING PHYSICS": 3 },
@@ -69,7 +69,7 @@ mech = { [
         { "C PROGRAMMING LABORATORY": 1 },
         { "ENGINEERING PRACTICES LABORATORY": 1 },
     ],
-    sem2 =[
+    [
         { "TECHNICAL ENGLISH- II": 3 },
         { "ENGINEERING MATHEMATICS-II": 4 },
         { "PHYSICS OF MATERIALS": 3 },
@@ -80,7 +80,7 @@ mech = { [
         { "PROGRAMMING AND DATA STRUCTURES LABORATORY": 1 },
         { "BASIC ELECTRICAL AND ELECTRONICS ENGINEERING LABORATORY": 1 },
     ],
-    sem3 =[
+    [
         { "TRANSFORMS AND BOUNDARY VALUE PROBLEMS": 4 },
         { "ENGINEERING THERMODYNAMICS": 3 },
         { "STRENGTH OF MATERIALS ": 3 },
@@ -92,7 +92,7 @@ mech = { [
         { "MANUFACTURING TECHNOLOGY LABORATORY-II": 2 },
         { "SOFT SKILLS AND APTITUDE-I": 1 },
     ],
-    sem4 =[
+    [
         { "STATISTICS AND NUMERICAL METHODS": 4 },
         { "KINEMATICS OF MACHINERY": 3 },
         { "THERMAL ENGINEERING": 3 },
@@ -104,7 +104,7 @@ mech = { [
         { "COMMUNICATIONS SKILLS LABORATORY": 1},
         { "SOFT SKILLS AND APTITUDE – II": 1 },
     ],
-    sem5 =[
+    [
         { "HEAT AND MASS TRANSFER": 3 },
         { "DYNAMICS OF MACHINERY": 3 },
         { "DESIGN OF MACHINE ELEMENTS": 3 },
@@ -118,10 +118,10 @@ mech = { [
         { "CAD AND CAM LABORATORY": 2},
         { "SOFT SKILLS AND APTITUDE – III": 1 },
     ]
-] }
+] 
 
-civil = { [
-    sem1 = [
+civil =  [
+    [
         { "TECHNICAL ENGLISH- I": 3 },
         { "ENGINEERING MATHEMATICS-I": 4 },
         { "ENGINEERING PHYSICS": 3 },
@@ -132,7 +132,7 @@ civil = { [
         { "C PROGRAMMING LABORATORY": 1 },
         { "ENGINEERING PRACTICES LABORATORY": 1 },
     ],
-    sem2 =[
+    [
         { "TECHNICAL ENGLISH- II": 3 },
         { "ENGINEERING MATHEMATICS-II": 4 },
         { "PHYSICS OF MATERIALS": 3 },
@@ -143,7 +143,7 @@ civil = { [
         { "PROGRAMMING AND DATA STRUCTURES LABORATORY": 1 },
         { "BASIC ELECTRICAL AND ELECTRONICS ENGINEERING LABORATORY": 1 },
     ],
-    sem3 =[
+    [
         { "TRANSFORMS AND PARTIAL DIFFERENTIAL EQUATIONS": 4 },
         { "CONSTRUCTION MATERIALS AND PRACTICES": 3 },
         { "MECHANICS OF SOLIDS ": 4 },
@@ -154,7 +154,7 @@ civil = { [
         { "COMMUNICATION SKILLS LABORATORY ": 1 },
         { "SOFT SKILLS AND APTITUDE-I": 1 },
     ],
-    sem4 =[
+    [
         { "NUMERICAL METHODS FOR ENGINEERING COMPUTATION": 4 },
         { "ENVIRONMENTAL SCIENCES ": 3 },
         { "STRENGTH OF MATERIALS": 4 },
@@ -165,7 +165,7 @@ civil = { [
         { "MATERIAL TESTING LABORATORY": 2 },
         { "SOFT SKILLS AND APTITUDE – II": 1 },
     ],
-    sem5 =[
+    [
         { "PROFESSIONAL ETHICS AND HUMAN VALUES": 3 },
         { "STRUCTURAL ANALYSIS": 4 },
         { "ENVIRONMENTAL ENGINEERING": 3 },
@@ -179,10 +179,10 @@ civil = { [
         { "TECHNICAL SEMINAR": 1},
         { "SOFT SKILLS AND APTITUDE – III": 1 },
     ]
-] }
+] 
 
-eee = { [
-    sem1 = [
+eee = [
+     [
         { "TECHNICAL ENGLISH- I": 3 },
         { "ENGINEERING MATHEMATICS-I": 4 },
         { "ENGINEERING PHYSICS": 3 },
@@ -193,7 +193,7 @@ eee = { [
         { "C PROGRAMMING LABORATORY": 1 },
         { "ENGINEERING PRACTICES LABORATORY": 1 },
     ],
-    sem2 =[
+    [
         { "TECHNICAL ENGLISH- II": 3 },
         { "ENGINEERING MATHEMATICS-II": 4 },
         { "PHYSICS OF MATERIALS": 3 },
@@ -204,7 +204,7 @@ eee = { [
         { "PROGRAMMING AND DATA STRUCTURES LABORATORY": 1 },
         { "BASIC ELECTRICAL AND ELECTRONICS ENGINEERING LABORATORY": 1 },
     ],
-    sem3 =[
+    [
         { "TRANSFORMS AND PARTIAL DIFFERENTIAL EQUATIONS": 4 },
         { "ELECTRONIC DEVICES AND CIRCUITS": 3 },
         { "ELECTROMAGNETIC THEORY ": 3 },
@@ -215,7 +215,7 @@ eee = { [
         { "ELECTRICAL MACHINES LABORATORY –I": 2 },
         { "SOFT SKILLS AND APTITUDE-I": 1 },
     ],
-    sem4 =[
+    [
         { "SIGNALS AND SYSTEMS": 3 },
         { "ELECTRICAL MACHINES – II ": 3 },
         { "GENERATION, TRANSMISSION AND DISTRIBUTION SYSTEMS": 4 },
@@ -226,7 +226,7 @@ eee = { [
         { "ELECTRICAL MACHINES LABORATORY – II": 2 },
         { "SOFT SKILLS AND APTITUDE – II": 1 },
     ],
-    sem5 =[
+    [
         { "TOTAL QUALITY MANAGEMENT IN ELECTRICAL INDUSTRY": 3 },
         { "LINEAR INTEGRATED CIRCUITS": 4 },
         { "MICROPROCESSORS AND MICROCONTROLLERS": 3 },
@@ -239,10 +239,10 @@ eee = { [
         { "POWER ELECTRONICS DESIGN LABORATORY": 2},
         { "SOFT SKILLS AND APTITUDE – III": 1 },
     ]
-] }
+] 
 
-ece = { [
-    sem1 = [
+ece =  [
+     [
         { "TECHNICAL ENGLISH- I": 3 },
         { "ENGINEERING MATHEMATICS-I": 4 },
         { "ENGINEERING PHYSICS": 3 },
@@ -253,7 +253,7 @@ ece = { [
         { "C PROGRAMMING LABORATORY": 1 },
         { "ENGINEERING PRACTICES LABORATORY": 1 },
     ],
-    sem2 =[
+    [
         { "TECHNICAL ENGLISH- II": 3 },
         { "ENGINEERING MATHEMATICS-II": 4 },
         { "PHYSICS OF MATERIALS": 3 },
@@ -264,7 +264,7 @@ ece = { [
         { "PROGRAMMING AND DATA STRUCTURES LABORATORY": 1 },
         { "BASIC ELECTRICAL AND ELECTRONICS ENGINEERING LABORATORY": 1 },
     ],
-    sem3 =[
+    [
         { "TRANSFORMS AND LINEAR ALGEBRA": 4 },
         { "ELECTRONIC DEVICES": 3 },
         { "NETWORK ANALYSIS AND SYNTHESIS": 3 },
@@ -275,7 +275,7 @@ ece = { [
         { "ENGLISH LABORATORY": 2 },
         { "SOFT SKILLS AND APTITUDE-I": 1 },
     ],
-    sem4 =[
+    [
         { "PROBABILITY AND STOCHASTIC PROCESSES": 4 },
         { "ENGINEERING ELECTROMAGNETICS": 4 },
         { "ELECTRONIC CIRCUITS": 3 },
@@ -287,7 +287,7 @@ ece = { [
         { "DIGITAL SIGNAL PROCESSING": 1},
         { "SOFT SKILLS AND APTITUDE – II": 1 },
     ],
-    sem5 =[
+    [
         { "DIGITAL COMMUNICATION": 3 },
         { "TRANSMISSION LINES AND WAVEGUIDES": 3 },
         { "MICROPROCESSORS AND MICROCONTROLLERS": 3 },
@@ -300,10 +300,10 @@ ece = { [
         { "VLSI LABORATORY": 1},
         { "SOFT SKILLS AND APTITUDE – III": 1 },
     ]
-] }
+] 
 
-it = { [
-    sem1 = [
+it =  [
+    [
         { "TECHNICAL ENGLISH- I": 3 },
         { "ENGINEERING MATHEMATICS-I": 4 },
         { "ENGINEERING PHYSICS": 3 },
@@ -314,7 +314,7 @@ it = { [
         { "C PROGRAMMING LABORATORY": 1 },
         { "ENGINEERING PRACTICES LABORATORY": 1 },
     ],
-    sem2 =[
+    [
         { "TECHNICAL ENGLISH- II": 3 },
         { "ENGINEERING MATHEMATICS-II": 4 },
         { "PHYSICS OF MATERIALS": 3 },
@@ -325,7 +325,7 @@ it = { [
         { "PROGRAMMING AND DATA STRUCTURES LABORATORY": 1 },
         { "BASIC ELECTRICAL AND ELECTRONICS ENGINEERING LABORATORY": 1 },
     ],
-    sem3 =[
+    [
         { "DISCRETE MATHEMATICS": 4 },
         { "ADVANCED DATA STRUCTURES": 3 },
         { "DIGITAL LOGIC DESIGN": 3 },
@@ -337,7 +337,7 @@ it = { [
         { "COMMUNICATION SKILLS LABORATORY": 1 },
         { "SOFT SKILLS AND APTITUDE-I": 1 },
     ],
-    sem4 =[
+    [
         { "PROBABILITY AND STATISTICS": 4 },
         { "OPERATING SYSTEMS": 3 },
         { "MICROPROCESSOR AND MICROCONTROLLERS": 3 },
@@ -348,7 +348,7 @@ it = { [
         { "JAVA PROGRAMMING LABORATORY": 1},
         { "SOFT SKILLS AND APTITUDE – II": 1 },
     ],
-    sem5 =[
+    [
         { "COMPUTER NETWORKS": 3 },
         { "DATABASE MANAGEMENT SYSTEMS": 3 },
         { "THEORY OF COMPUTATION": 4 },
@@ -361,10 +361,10 @@ it = { [
         { "MINI PROJECT - I": 1},
         { "SOFT SKILLS AND APTITUDE – III": 1 },
     ]
-] }
+] 
 
-ft = { [
-    sem1 = [
+ft =  [
+    [
         { "TECHNICAL ENGLISH- I": 3 },
         { "ENGINEERING MATHEMATICS-I": 4 },
         { "ENGINEERING PHYSICS": 3 },
@@ -375,7 +375,7 @@ ft = { [
         { "C PROGRAMMING LABORATORY": 1 },
         { "ENGINEERING PRACTICES LABORATORY": 1 },
     ],
-    sem2 =[
+    [
         { "TECHNICAL ENGLISH- II": 3 },
         { "ENGINEERING MATHEMATICS-II": 4 },
         { "PHYSICS OF MATERIALS": 3 },
@@ -386,7 +386,7 @@ ft = { [
         { "PROGRAMMING AND DATA STRUCTURES LABORATORY": 1 },
         { "BASIC ELECTRICAL AND ELECTRONICS ENGINEERING LABORATORY": 1 },
     ],
-    sem3 =[
+    [
         { "PROBABILITY AND STATISTICAL QUALITY CONTROL": 4 },
         { "BASICS OF MECHANICAL AND ELECTRICAL ENGINEERING": 3 },
         { "ENVIRONMENTAL SCIENCE AND ENGINEERING": 3 },
@@ -396,7 +396,7 @@ ft = { [
         { "FASHION ILLUSTRATION LABORATORY": 1 },
         { "SOFT SKILLS AND APTITUDE-I": 1 },
     ],
-    sem4 =[
+    [
         { "HISTORY OF COSTUMES AND ACCESSORIES DESIGNING": 4 },
         { "WOVEN FABRIC MANUFACTURE AND STRUCTURE": 3 },
         { "KNITTED FABRIC MANUFACTURE AND STRUCTURE": 3 },
@@ -408,7 +408,7 @@ ft = { [
         { "IN-PLANT TRAINING": 1 },
         { "SOFT SKILLS AND APTITUDE – II": 1 },
     ],
-    sem5 =[
+    [
         { "GARMENT CONSTRUCTION-II": 3 },
         { "GARMENT PRODUCTION MACHINERY AND EQUIPMENT": 3 },
         { "APPAREL PRODUCTION PLANNING AND CONTROL": 3 },
@@ -420,4 +420,4 @@ ft = { [
         { "IN-PLANT TRAINING": 2 },
         { "SOFT SKILLS AND APTITUDE – III": 1 },
     ]
-] }
+] 
