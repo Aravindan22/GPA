@@ -1,9 +1,9 @@
 <%- include("partials/header"); -%>
 <form action="/sem" method="POST">
     <div>
-        <%  semester.forEach(function(sem){ %>
-            <button type="submit" name = "sem" value="<%=sem%>"><%=sem%></button>        
-        <% }); %>
+        <%  for(let i=0;i<semester.length;i++){ %>
+            <button type="submit" name = "sem" value="<%=i%>"><%=semester[i]%></button>        
+        <% } %>
 </div>
 </form>
 
