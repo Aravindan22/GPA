@@ -1,9 +1,10 @@
 <%- include("partials/header"); -%>
-
-<div>
+<form action="/sem" method="POST">
+    <div>
         <%  semester.forEach(function(sem){ %>
-            <button type="button" name = "sem"><%=sem%></button>        
+            <button type="submit" name = "sem" value="<%=sem%>"><%=sem%></button>        
         <% }); %>
 </div>
+</form>
 
 <%- include("partials/footer"); -%>
