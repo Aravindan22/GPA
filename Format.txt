@@ -421,3 +421,9 @@ ft =  [
         { "SOFT SKILLS AND APTITUDE – III": 1 },
     ]
 ] 
+
+const departments = {
+"CSE":cse,
+"MECH":mech,
+"ECE":ece,
+}
