@@ -1,4 +1,4 @@
-cse = {
+const cse = { [
     sem1 = [
         { "TECHNICAL ENGLISH- I": 3 },
         { "ENGINEERING MATHEMATICS-I": 4 },
@@ -55,9 +55,9 @@ cse = {
         { "PROFESSIONAL COMMUNICATION SKILLS LABORATORY": 1},
         { "SOFT SKILLS AND APTITUDE – III": 1 },
     ]
-}
+] }
 
-mech = {
+mech = { [
     sem1 = [
         { "TECHNICAL ENGLISH- I": 3 },
         { "ENGINEERING MATHEMATICS-I": 4 },
@@ -118,9 +118,9 @@ mech = {
         { "CAD AND CAM LABORATORY": 2},
         { "SOFT SKILLS AND APTITUDE – III": 1 },
     ]
-}
+] }
 
-civil = {
+civil = { [
     sem1 = [
         { "TECHNICAL ENGLISH- I": 3 },
         { "ENGINEERING MATHEMATICS-I": 4 },
@@ -179,9 +179,9 @@ civil = {
         { "TECHNICAL SEMINAR": 1},
         { "SOFT SKILLS AND APTITUDE – III": 1 },
     ]
-}
+] }
 
-eee = {
+eee = { [
     sem1 = [
         { "TECHNICAL ENGLISH- I": 3 },
         { "ENGINEERING MATHEMATICS-I": 4 },
@@ -239,9 +239,9 @@ eee = {
         { "POWER ELECTRONICS DESIGN LABORATORY": 2},
         { "SOFT SKILLS AND APTITUDE – III": 1 },
     ]
-}
+] }
 
-ece = {
+ece = { [
     sem1 = [
         { "TECHNICAL ENGLISH- I": 3 },
         { "ENGINEERING MATHEMATICS-I": 4 },
@@ -300,9 +300,9 @@ ece = {
         { "VLSI LABORATORY": 1},
         { "SOFT SKILLS AND APTITUDE – III": 1 },
     ]
-}
+] }
 
-it = {
+it = { [
     sem1 = [
         { "TECHNICAL ENGLISH- I": 3 },
         { "ENGINEERING MATHEMATICS-I": 4 },
@@ -361,9 +361,9 @@ it = {
         { "MINI PROJECT - I": 1},
         { "SOFT SKILLS AND APTITUDE – III": 1 },
     ]
-}
+] }
 
-ft = {
+ft = { [
     sem1 = [
         { "TECHNICAL ENGLISH- I": 3 },
         { "ENGINEERING MATHEMATICS-I": 4 },
@@ -420,4 +420,4 @@ ft = {
         { "IN-PLANT TRAINING": 2 },
         { "SOFT SKILLS AND APTITUDE – III": 1 },
     ]
-}
+] }
