@@ -440,12 +440,6 @@ exports.getSubjects = function (department, semester) {
     const obj = departments[department][semester];
     // console.log(obj);
     return (obj);
-
-    function getSubject(department, semester) {
-        return (departments[department][semester - 1]);
-        //console.log(departments[department][semester]);
-        // ea1bfbc9971dbac370c80c2d40f683a966d46094
-    }
 }
 
 // getSubject("CSE", 2);
