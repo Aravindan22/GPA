@@ -16,16 +16,16 @@ app.get("/", function (req, res) {
     res.render("home", { departments: departments })
 });
 
-app.post("/", function (req, res) {
-    console.log(req.body.departments);
-});
+// app.post("/", function (req, res) {
+//     console.log(req.body.departments);
+// });
 
 app.get("/sem", function (req, res) {
     res.render("sem", { semester: semester });
 });
 
 app.post("/sem", function (req, res) {
-    console.log(req.body.sem);
+    console.log(req.body.department);
 });
 
 app.listen(3000, function () {
