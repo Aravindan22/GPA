@@ -1,14 +1,8 @@
-<!DOCTYPE html>
-<head>
+<%- include("partials/header"); -%>
+<div>
+     <%  departments.forEach(function(department){ %>
+          <button type="submit" name="department" value="<%=department%>"><%=department%></button>        
+	 <% }) %>
+</div>
 
-</head>
-<body>
-    <form action="/" method="POST">
-        <div>
-            <%  departments.forEach(function(department){ %>
-                <button type="submit" name="department" value="<%=department%>"><%=department%></button>        
-                <% }) %>
-        </div>
-    </form>
-</body>
-</html>
+<%- include("partials/footer"); -%>
