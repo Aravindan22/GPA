@@ -18,11 +18,10 @@ app.use(session({
 
 const departments = ["MECH", "EEE", "ECE", "CSE", "IT", "FT", "CIVIL"];
 const semester = ["SEMESTER 1", "SEMESTER 2", "SEMESTER 3", "SEMESTER 4", "SEMESTER 5", "SEMESTER 6", "SEMESTER 7", "SEMESTER 8"];
-var department_chosen;
-var semester_chosen;
 let grade = [];
 let sub_obj;
 let subjects = [];
+let gpa = 0;
 
 app.get("/", function (req, res) {
     res.render("home", { departments: departments })
@@ -30,7 +29,6 @@ app.get("/", function (req, res) {
 
 app.post("/", function (req, res) {
     console.log(req.body.department);
-    // department_chosen = req.body.department;
     req.session.department_chosen = req.body.department;
     res.redirect("/sem");
 });
@@ -41,17 +39,18 @@ app.get("/sem", function (req, res) {
 
 app.post("/sem", function (req, res) {
     console.log(req.body.sem);
-    // semester_chosen = req.body.sem;
     req.session.semester_chosen = req.body.sem;
     res.redirect("/gpa");
 });
 
 app.get("/gpa", function (req, res) {
+    subjects = [];
+    gpa = 0;
     sub_obj = data.getSubjects(req.session.department_chosen, req.session.semester_chosen);
     for (let i = 1; i < sub_obj.length; i++) {
         subjects.push(Object.keys(sub_obj[i]));
     }
-    res.render("gpa", { subjects: subjects });
+    res.render("gpa", { subjects: subjects, gpa: gpa });
 });
 app.post("/gpa", function (req, res) {
     grade = req.body.subject;
@@ -62,8 +61,10 @@ app.post("/gpa", function (req, res) {
         sum = sum + parseInt(grade[i] * val);
         total += val;
     }
-    let gpa = sum / total;
-    res.send("<h1>" + gpa + "</h1>");
+    gpa = sum / total;
+    //res.send("<h1>" + gpa + "</h1>");
+
+    res.render("gpa", { subjects: subjects, gpa: gpa });
 });
 app.listen(3000, function () {
     console.log("Server started on port 3000");
