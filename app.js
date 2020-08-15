@@ -53,7 +53,7 @@ app.get("/gpa",function(req,res){
     res.render("gpa",{subjects: subjects});
 });
 app.post("/gpa",function (req, res){
-    console.log(req.body);
+    console.log(req.body.subject);
 });
 app.listen(3000, function () {
     console.log("Server started on port 3000");
