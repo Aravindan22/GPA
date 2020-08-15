@@ -49,8 +49,11 @@ app.get("/gpa",function(req,res){
     for (let i = 1; i < sub_obj.length; i++) {
          subjects.push( Object.keys(sub_obj[i]));
     }
-    console.log("subjects"+subjects);
+    // console.log("subjects"+subjects);
     res.render("gpa",{subjects: subjects});
+});
+app.post("/gpa",function (req, res){
+    console.log(req.body);
 });
 app.listen(3000, function () {
     console.log("Server started on port 3000");

@@ -1,9 +1,9 @@
 <%- include("partials/header"); -%>
-<form method="POST" action="/">
+<form method="POST" action="/gpa">
      <div>
           <%  subjects.forEach(function(subject){ %>
             <label for="Subject"><%=subject%> </label>
-            <select name="cars" id="cars">
+            <select name="subject" id="subjects">
               <option value="O">O</option>
               <option value="A">A</option>
               <option value="A+">A+</option>
@@ -11,5 +11,6 @@
             </select> <br>  
            <% }); %>
      </div>
+     <button type="submit">Submit</button>
 </form>
 <%- include("partials/footer"); -%>
