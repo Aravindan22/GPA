@@ -13,6 +13,15 @@
             </select> <br>  
            <% }); %>
      </div>
-     <button type="submit">Submit</button>
+
+     <button type="submit">Calculate GPA</button>
+	 <% if(gpa === 0 ) { %>
+		<label hidden = "true"><%= gpa %></label>
+	 <% } else { %>
+		<label><%= gpa %></label>
+	 <% } %>
+	 
 </form>
 <%- include("partials/footer"); -%>
+
+	
