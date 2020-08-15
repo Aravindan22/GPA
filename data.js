@@ -433,13 +433,12 @@ const departments = {
     "IT": it,
     "FT": ft
 }
-
+let obj;
 
 exports.getSubjects = function (department, semester) {
 
-    const obj = departments[department][semester];
-    // console.log(obj);
+    obj = departments[department][semester];
+    // console.log("Data File:"+obj);
     return (obj);
 }
 
-// getSubject("CSE", 2);
