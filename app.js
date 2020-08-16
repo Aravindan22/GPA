@@ -3,18 +3,12 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
 const data = require(__dirname + "/data.js");
-const session = require('express-session');
 const app = express();
 
 app.set('view engine', 'ejs');
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
-app.use(session({
-    secret: 'GPA Secret Key[-_-]',
-    resave: false,
-    saveUninitialized: true
-}));
 
 const departments = ["MECH", "EEE", "ECE", "CSE", "IT", "FT", "CIVIL"];
 const semester = ["SEMESTER 1", "SEMESTER 2", "SEMESTER 3", "SEMESTER 4", "SEMESTER 5", "SEMESTER 6", "SEMESTER 7", "SEMESTER 8"];
@@ -22,6 +16,8 @@ let grade = [];
 let sub_obj;
 let subjects = [];
 let gpa = 0;
+let department_chosen;
+let semester_chosen;
 
 app.get("/", function (req, res) {
     res.render("home", { departments: departments })
@@ -29,7 +25,7 @@ app.get("/", function (req, res) {
 
 app.post("/", function (req, res) {
     console.log(req.body.department);
-    req.session.department_chosen = req.body.department;
+    department_chosen = req.body.department; 
     res.redirect("/sem");
 });
 
@@ -39,14 +35,14 @@ app.get("/sem", function (req, res) {
 
 app.post("/sem", function (req, res) {
     console.log(req.body.sem);
-    req.session.semester_chosen = req.body.sem;
+    semester_chosen = req.body.sem; 
     res.redirect("/gpa");
 });
 
 app.get("/gpa", function (req, res) {
     subjects = [];
     gpa = 0;
-    sub_obj = data.getSubjects(req.session.department_chosen, req.session.semester_chosen);
+    sub_obj = data.getSubjects(department_chosen, semester_chosen); 
     for (let i = 1; i < sub_obj.length; i++) {
         subjects.push(Object.keys(sub_obj[i]));
     }
@@ -62,7 +58,6 @@ app.post("/gpa", function (req, res) {
         total += val;
     }
     gpa = sum / total;
-    //res.send("<h1>" + gpa + "</h1>");
 
     res.render("gpa", { subjects: subjects, gpa: gpa });
 });
