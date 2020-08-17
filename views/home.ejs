@@ -1,9 +1,11 @@
 <%- include("partials/header"); -%>
 <form method="POST" action="/">
-     <div>
+     <div class = "row deptDiv">
+		<div class = "col-sm-12">
           <%  departments.forEach(function(department){ %>
-               <button type="submit" name="department" value="<%=department%>"><%=department%></button>        
+               <button type="submit" class="btn btn-lg btn-secondary dept" name="department" value="<%=department%>"><%=department%></button>        
            <% }) %>
+		</div>
      </div>
 </form>
 
