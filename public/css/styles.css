@@ -1,0 +1,81 @@
+
+/* Background */
+
+body {
+    background-color: cornflowerblue;
+}
+
+/* Buttons */
+
+.dept, .sem {
+    padding: 15px;
+    border-radius: 20px;
+    margin: 10px;
+    border-color: ThreeDFace;
+    color: blueviolet;
+    position: relative;
+}
+
+/* Departments */
+
+.deptDiv {
+    margin-top: 22%;
+    margin-left: 17%;
+}
+
+/* Department Buttons */
+.dept {
+    width: 80px;
+    height: 70px;
+}
+
+/* Semester */
+
+.semDiv {
+    margin-top: 16%;
+    margin-left: 18%;
+}
+
+/* Semester Buttons*/
+
+.sem {
+    width: 150px;
+    height: 110px;
+}
+
+/* GPA */
+
+.gpaDiv {
+    margin: 30px;
+    margin-left: 175px;
+    padding: 10px;
+}
+
+/* GPA Dropdown List*/
+
+.sub {
+    color: #fff;
+    font-family: 'Lora', serif;
+    font-size: 1.8rem;
+    width: 600px;
+    height: 40px;
+    text-align: center;
+}
+
+/* Calculate Button */
+
+.subBtn {
+    margin-left: 420px;
+    border-color: ThreeDShadow;
+    height: 60px;
+    width: 180px;
+}
+
+/* GPA Result */
+
+.gpaLabel {
+    font-family: 'Lora', serif;
+    font-size: 2.3rem;
+    font-weight: bolder;
+    padding-left: 80px;
+}
