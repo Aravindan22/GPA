@@ -1,9 +1,9 @@
 <%- include("partials/header"); -%>
 <form method="POST" action="/gpa">
-     <div>
+     <div class = "gpaDiv">
           <%  subjects.forEach(function(subject){ %>
-            <label for="Subject"><%=subject%> </label>
-            <select name="subject" id="subjects">
+            <label for="Subject" class = "sub"><%=subject%> </label>
+            <select name="subject" id="subjects" class = "btn">
               <option value=10>O</option>
               <option value=9>A+</option>
               <option value=8>A</option>
@@ -14,14 +14,12 @@
            <% }); %>
      </div>
 
-     <button type="submit">Calculate GPA</button>
+     <button type="submit" class = "btn btn-lg btn-success subBtn">Calculate GPA</button>
 	 <% if(gpa === 0 ) { %>
-		<label hidden = "true"><%= gpa %></label>
+		<label hidden = "true" class = "gpaLabel"><%= gpa %></label>
 	 <% } else { %>
-		<label><%= gpa %></label>
+		<label class = "gpaLabel"><%= gpa %></label>
 	 <% } %>
 	 
 </form>
 <%- include("partials/footer"); -%>
-
-	
