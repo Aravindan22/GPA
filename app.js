@@ -43,7 +43,7 @@ app.get("/gpa", function (req, res) {
     subjects = [];
     gpa = 0;
     sub_obj = data.getSubjects(department_chosen, semester_chosen); 
-    for (let i = 1; i < sub_obj.length; i++) {
+    for (let i = 0; i < sub_obj.length; i++) {
         subjects.push(Object.keys(sub_obj[i]));
     }
     res.render("gpa", { subjects: subjects, gpa: gpa });
