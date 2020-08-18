@@ -1,10 +1,24 @@
 
-/* Background */
+/* Background  www.gradient-animator.com    */
 
 body {
-    background-color: cornflowerblue;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    background-size: 1000% 1000%;
+   -webkit-animation: AnimationName 5s ease infinite;
+    animation: AnimationName 5s ease infinite;
 }
 
+@-webkit-keyframes AnimationName {
+    0%{background-position:91% 0%}
+    50%{background-position:10% 100%}
+    100%{background-position:91% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:91% 0%}
+    50%{background-position:10% 100%}
+    100%{background-position:91% 0%}
+}
 /* Buttons */
 
 .dept, .sem {
