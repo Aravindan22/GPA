@@ -2,6 +2,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
+const _ = require('lodash');
 const data = require(__dirname + "/data.js");
 const app = express();
 
@@ -18,6 +19,7 @@ let subjects = [];
 let gpa = 0;
 let department_chosen;
 let semester_chosen;
+let path;
 
 app.get("/", function (req, res) {
     res.render("home", { departments: departments })
@@ -26,15 +28,30 @@ app.get("/", function (req, res) {
 app.post("/", function (req, res) {
     console.log(req.body.department);
     department_chosen = req.body.department; 
-    res.redirect("/sem");
+    path = "/"+department_chosen;
+    res.redirect(path);
 });
 
-app.get("/sem", function (req, res) {
-    res.render("sem", { semester: semester });
+app.get("/:dept", function (req, res) {
+    let flag=0;
+    departments.forEach(dep => {
+        if(_.toUpper(req.params.dept)==dep){
+            department_chosen= req.params.dept;
+            console.log("HERE:"+department_chosen);
+            flag = 1;
+            res.render("sem", { semester: semester,department:department_chosen });
+        }
+    });
+    if(flag === 0){
+        console.log('hhhhh');
+        res.redirect("/");
+        
+    };
+    
 });
 
-app.post("/sem", function (req, res) {
-    console.log(req.body.sem);
+app.post("/:department_chosen/sem", function (req, res) {
+    console.log("post_sem"+req.body.sem);
     semester_chosen = req.body.sem; 
     res.redirect("/gpa");
 });
@@ -42,6 +59,7 @@ app.post("/sem", function (req, res) {
 app.get("/gpa", function (req, res) {
     subjects = [];
     gpa = 0;
+    console.log("GET_gpa");
     sub_obj = data.getSubjects(department_chosen, semester_chosen); 
     for (let i = 0; i < sub_obj.length; i++) {
         subjects.push(Object.keys(sub_obj[i]));
