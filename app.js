@@ -17,9 +17,8 @@ let grade = [];
 let sub_obj;
 let subjects = [];
 let gpa = 0;
-let department_chosen;
-let semester_chosen;
-let path;
+let department_chosen="LOOSUKUDA";
+let semester_chosen="LOOSUKUDA";
 
 app.get("/", function (req, res) {
     res.render("home", { departments: departments })
@@ -28,30 +27,14 @@ app.get("/", function (req, res) {
 app.post("/", function (req, res) {
     console.log(req.body.department);
     department_chosen = req.body.department; 
-    path = "/"+department_chosen;
-    res.redirect(path);
+    res.render("sem", { semester: semester });
 });
 
-app.get("/:dept", function (req, res) {
-    let flag=0;
-    departments.forEach(dep => {
-        if(_.toUpper(req.params.dept)==dep){
-            department_chosen= req.params.dept;
-            console.log("HERE:"+department_chosen);
-            flag = 1;
-            res.render("sem", { semester: semester,department:department_chosen });
-        }
-    });
-    if(flag === 0){
-        console.log('hhhhh');
-        res.redirect("/");
-        
-    };
-    
+app.get("/sem", function (req, res) {
+    res.redirect("/");
 });
-
-app.post("/:department_chosen/sem", function (req, res) {
-    console.log("post_sem"+req.body.sem);
+app.post("/sem", function (req, res) {
+    console.log("post_sem "+req.body.sem);
     semester_chosen = req.body.sem; 
     res.redirect("/gpa");
 });
@@ -60,6 +43,7 @@ app.get("/gpa", function (req, res) {
     subjects = [];
     gpa = 0;
     console.log("GET_gpa");
+    if(department_chosen === "LOOSUKUDA" || semester_chosen==="LOOSUKUDA")res.redirect("/");
     sub_obj = data.getSubjects(department_chosen, semester_chosen); 
     for (let i = 0; i < sub_obj.length; i++) {
         subjects.push(Object.keys(sub_obj[i]));
@@ -67,6 +51,9 @@ app.get("/gpa", function (req, res) {
     res.render("gpa", { subjects: subjects, gpa: gpa });
 });
 app.post("/gpa", function (req, res) {
+    if(subjects.length < 1){
+        res.redirect("/");
+    }
     grade = req.body.subject;
     let sum = 0;
     let total = 0;
@@ -76,8 +63,8 @@ app.post("/gpa", function (req, res) {
         total += val;
     }
     gpa = sum / total;
-
     res.render("gpa", { subjects: subjects, gpa: gpa });
+    subjects=[];
 });
 app.listen(3000, function () {
     console.log("Server started on port 3000");
