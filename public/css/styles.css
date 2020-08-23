@@ -82,14 +82,15 @@ body {
     margin-left: 420px;
     border-color: ThreeDShadow;
     height: 60px;
-    width: 180px;
+    width: 240px;
 }
 
 /* GPA Result */
 
 .gpaLabel {
     font-family: 'Lora', serif;
-    font-size: 2.3rem;
+    font-size: 2.7rem;
     font-weight: bolder;
     padding-left: 80px;
+    color: #fff;
 }
