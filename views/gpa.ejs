@@ -14,10 +14,13 @@
             </select> <br>  
            <% }); %>
      </div>
-
-     <button type="submit" class = "btn btn-lg btn-success subBtn">Calculate GPA</button>
-     <label class = "gpaLabel">GPA : <%= gpa %></label>
-    <button type="button" onclick="document.getElementById("gpaLabel").innerHTML= "GPA : 0"">Refresh</button>
+     <button type="submit" class = "btn btn-lg btn-success subBtn" id="gpabtn">Refresh / Calculate </button>
+     <% if(gpa === 0 ) { %>
+      <label hidden = "true" class = "gpaLabel"><%= gpa %></label>
+     <% } else { %>
+     
+      <label class = "gpaLabel"><%= gpa %></label>
+     <% } %>
 	 
 </form>
 <%- include("partials/footer"); -%>
