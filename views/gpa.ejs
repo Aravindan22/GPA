@@ -1,8 +1,25 @@
 <%- include("partials/header"); -%>
 <form method="POST" action="/gpa">
-  
      <div class = "gpaDiv">
+		  <% electiveIArr = []; %>
+		  <% electiveIIArr = []; %>
+		  <% electiveIIIArr = []; %>
+		  <% openElectiveArr = []; %>
           <%  subjects.forEach(function(subject){ %>
+		  <% if(subject[0].includes("OPEN ELECTIVE")) { %>
+				<% console.log(subject[0]); %>
+				<% openElectiveArr.push(subject[0]); %>
+		  <% } else if(subject[0].includes("ELECTIVE III")) { %>
+				<% console.log(subject[0]); %>
+				<% electiveIIIArr.push(subject[0]); %>
+		 <% } else if(subject[0].includes("ELECTIVE II")) { %>
+				<% console.log(subject[0]); %>
+				<% electiveIIArr.push(subject[0]); %>
+		  <% } else if(subject[0].includes("ELECTIVE I")) { %>
+				<% console.log(subject[0]); %>
+				<% electiveIArr.push(subject[0]); %>
+		  <% } else {%>
+		  
             <label for="Subject" class = "sub"><%=subject%> </label>
             <select name="subject" id="subjects" class = "btn">
               <option value=10>O</option>
@@ -12,15 +29,93 @@
               <option value=6>B</option>
               <option value=0 selected>RA</option>
             </select> <br>  
-           <% }); %>
+           <% } %>
+		   <% }); %>
+
+		   <% if(electiveIArr.length > 0) { %>
+		   <div>
+			   <select name="electiveI" class="btn elective">
+				<% electiveIArr.forEach(function(electiveSub) { %>
+					<option value = <%=electiveSub%>><%=electiveSub%></option>
+				<% }); %>
+				</select>
+
+				<select name="subject" id="subjects" class="btn">
+				  <option value=10>O</option>
+				  <option value=9>A+</option>
+				  <option value=8>A</option>
+				  <option value=7>B+</option>
+				  <option value=6>B</option>
+				  <option value=0 selected>RA</option>
+				</select> <br>
+			</div>
+			<% } %>
+			<br >
+			<% if(electiveIIArr.length > 0) { %>
+			<div>
+			   <select name="electiveII" class="btn elective">
+				<% electiveIIArr.forEach(function(electiveSub) { %>
+					<option value = <%=electiveSub%>><%=electiveSub%></option>
+				<% }); %>
+				</select>
+
+				<select name="subject" id="subjects" class="btn">
+				  <option value=10>O</option>
+				  <option value=9>A+</option>
+				  <option value=8>A</option>
+				  <option value=7>B+</option>
+				  <option value=6>B</option>
+				  <option value=0 selected>RA</option>
+				</select> <br>
+			</div>
+			<% } %>
+			<br >
+			<% if(electiveIIIArr.length > 0) { %>
+			<div>
+			   <select name="electiveIII" class="btn elective">
+				<% electiveIIIArr.forEach(function(electiveSub) { %>
+					<option value = <%=electiveSub%>><%=electiveSub%></option>
+				<% }); %>
+				</select>
+
+				<select name="subject" id="subjects" class="btn">
+				  <option value=10>O</option>
+				  <option value=9>A+</option>
+				  <option value=8>A</option>
+				  <option value=7>B+</option>
+				  <option value=6>B</option>
+				  <option value=0 selected>RA</option>
+				</select> <br>
+			</div>
+			<% } %>
+			<br >
+			<% if(openElectiveArr.length > 0) { %>
+			<div>
+			   <select name="openElective" class="btn elective">
+				<% openElectiveArr.forEach(function(electiveSub) { %>
+					<option value = <%=electiveSub%>><%=electiveSub%></option>
+				<% }); %>
+				</select>
+
+				<select name="subject" id="subjects" class="btn">
+				  <option value=10>O</option>
+				  <option value=9>A+</option>
+				  <option value=8>A</option>
+				  <option value=7>B+</option>
+				  <option value=6>B</option>
+				  <option value=0 selected>RA</option>
+				</select> <br>
+			</div>
+			<% } %>
+
      </div>
-     <button type="submit" class = "btn btn-lg btn-success subBtn" id="gpabtn">Refresh / Calculate </button>
-     <% if(gpa === 0 ) { %>
-      <label hidden = "true" class = "gpaLabel"><%= gpa %></label>
-     <% } else { %>
-     
-      <label class = "gpaLabel"><%= gpa %></label>
-     <% } %>
+
+     <button type="submit" class = "btn btn-lg btn-success subBtn">Refresh / Calculate GPA</button>
+	 <% if(gpa === 0 ) { %>
+		<label hidden = "true" class = "gpaLabel"><%= gpa %></label>
+	 <% } else { %>
+		<label class = "gpaLabel"><%= gpa %></label>
+	 <% } %>
 	 
 </form>
 <%- include("partials/footer"); -%>
