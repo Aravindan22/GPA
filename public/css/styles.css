@@ -1,4 +1,5 @@
 
+
 /* Background  www.gradient-animator.com    */
 
 body {
@@ -74,6 +75,13 @@ body {
     width: 600px;
     height: 40px;
     text-align: center;
+}
+
+.elective {
+    color: #000;
+    width: 600px;
+    font-family: 'Lora', serif;
+    font-size: 1.5rem;
 }
 
 /* Calculate Button */
